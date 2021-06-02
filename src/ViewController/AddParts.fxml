@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddPartsController">
+   <children>
+      <Label layoutX="51.0" layoutY="77.0" prefHeight="47.0" prefWidth="103.0" text="Add Part" textFill="#213582">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="InhouseRbtn" layoutX="256.0" layoutY="91.0" mnemonicParsing="false" onAction="#onActionInhousePartChoice" selected="true" text="In-house">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="partTypeToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="outsourcedRbtn" layoutX="402.0" layoutY="91.0" mnemonicParsing="false" onAction="#onActionGoToOutsourcedMenu" text="Outsourced" toggleGroup="$partTypeToggle">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="67.0" layoutY="185.0" text="ID" />
+      <TextField fx:id="partNameTxt" layoutX="165.0" layoutY="225.0" prefHeight="37.0" prefWidth="150.0" promptText="Part Name">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="235.0" text="Name" />
+      <TextField fx:id="inventoryTxt" layoutX="165.0" layoutY="276.0" prefHeight="37.0" prefWidth="150.0" promptText="Inv">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="286.0" text="Inv" />
+      <TextField fx:id="maxAmtTxt" layoutX="165.0" layoutY="375.0" prefHeight="37.0" prefWidth="86.0" promptText="Max">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="68.0" layoutY="339.0" text="Price" />
+      <Label layoutX="71.0" layoutY="385.0" text="Max" />
+      <TextField fx:id="machineIdTxt" layoutX="165.0" layoutY="429.0" prefHeight="37.0" prefWidth="150.0" promptText="Mach ID">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="machineIdLbl" layoutX="67.0" layoutY="439.0" text="Machine ID" />
+      <Button layoutX="269.0" layoutY="506.0" mnemonicParsing="false" onAction="#onActionSavePart" prefHeight="37.0" prefWidth="86.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="408.0" layoutY="506.0" mnemonicParsing="false" onAction="#onActionDisplayMainMenu" prefHeight="37.0" prefWidth="86.0" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="minAmtLbl" layoutX="296.0" layoutY="385.0" text="Min" />
+      <TextField fx:id="minAmtTxt" layoutX="344.0" layoutY="375.0" prefHeight="37.0" prefWidth="86.0" promptText="Min">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="priceTxt" layoutX="165.0" layoutY="329.0" prefHeight="37.0" prefWidth="150.0" promptText="Price/Cost">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partIDTxt" editable="false" layoutX="165.0" layoutY="175.0" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: dark;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
