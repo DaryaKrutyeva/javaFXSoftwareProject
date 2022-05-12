@@ -2,7 +2,7 @@
 
 Darya Krutyeva
 
-This is an original inventory managament system created for my software course. It was based on the needs of a fictional company, who had outgrown its current inventory management system.
+This is an original inventory managament system created for my software course. It was based on the needs of a fictional company who had outgrown its current inventory management system.
 
 Java
 Built in IntelliJ
@@ -28,5 +28,4 @@ The graduate incorporates simple exception handling in application development f
 
 The graduate develops user interfaces to meet project requirements.
 
-If you are reviewing my portfolio, and are looking for the specific requirements satisfied by this project, feel free to reach out to me and I will provide further detail. 
 
